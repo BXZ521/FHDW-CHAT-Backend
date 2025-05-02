@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\FHDW-CHAT-Backend.props" />
-</Project>
