@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\FHDW-CHAT-Backend.props" />
+</Project>
