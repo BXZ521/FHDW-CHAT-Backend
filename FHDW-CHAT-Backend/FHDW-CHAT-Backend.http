@@ -1,0 +1,6 @@
+@FHDW_CHAT_Backend_HostAddress = http://localhost:5125
+
+GET {{FHDW_CHAT_Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
