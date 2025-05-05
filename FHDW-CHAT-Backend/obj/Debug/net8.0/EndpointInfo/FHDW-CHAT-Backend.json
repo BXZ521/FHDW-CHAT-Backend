@@ -5,7 +5,7 @@
     "version": "1.0"
   },
   "paths": {
-    "/api/Chat": {
+    "/Chat/getChatLog": {
       "get": {
         "tags": [
           "Chat"
@@ -17,7 +17,7 @@
         }
       }
     },
-    "/api/Chat/sendMessage": {
+    "/Chat/sendMessage": {
       "post": {
         "tags": [
           "Chat"
@@ -39,7 +39,8 @@
                 "$ref": "#/components/schemas/ChatMessage"
               }
             }
-          }
+          },
+          "required": true
         },
         "responses": {
           "200": {

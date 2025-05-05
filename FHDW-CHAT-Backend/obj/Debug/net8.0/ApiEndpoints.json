@@ -2,7 +2,7 @@
   {
     "ContainingType": "ChatBackend.Controllers.ChatController",
     "Method": "GetChatLog",
-    "RelativePath": "api/Chat",
+    "RelativePath": "Chat/getChatLog",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +12,7 @@
   {
     "ContainingType": "ChatBackend.Controllers.ChatController",
     "Method": "SendMessage",
-    "RelativePath": "api/Chat/sendMessage",
+    "RelativePath": "Chat/sendMessage",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

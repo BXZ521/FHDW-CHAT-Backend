@@ -72,3 +72,4 @@ C:\Users\Acer\Source\Repos\FHDW-CHAT-Backend\FHDW-CHAT-Backend\obj\Debug\net8.0\
 C:\Users\Acer\Source\Repos\FHDW-CHAT-Backend\FHDW-CHAT-Backend\obj\Debug\net8.0\FHDW-CHAT-Backend.pdb
 C:\Users\Acer\Source\Repos\FHDW-CHAT-Backend\FHDW-CHAT-Backend\obj\Debug\net8.0\FHDW-CHAT-Backend.genruntimeconfig.cache
 C:\Users\Acer\Source\Repos\FHDW-CHAT-Backend\FHDW-CHAT-Backend\obj\Debug\net8.0\ref\FHDW-CHAT-Backend.dll
+C:\Users\Acer\Source\Repos\FHDW-CHAT-Backend\FHDW-CHAT-Backend\bin\Debug\net8.0\chatlog.json

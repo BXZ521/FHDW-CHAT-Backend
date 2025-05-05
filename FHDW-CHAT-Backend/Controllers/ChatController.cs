@@ -10,14 +10,13 @@ namespace ChatBackend.Controllers
     public class ChatController : ControllerBase
     {
         private static readonly string FilePath = "chatlog.json";
-        private static List<ChatMessage> messages = LoadChatLog();
 
         // GET Chat/getChatLog
         [HttpGet]
         [Route("getChatLog")]
         public IActionResult GetChatLog()
         {
-            return Ok(messages);
+            return Ok(LoadChatLog());
         }
 
         // POST Chat/sendMessage
@@ -27,8 +26,9 @@ namespace ChatBackend.Controllers
         {
             // Save the incoming message
             message.TimeStamp = DateTime.UtcNow.ToString("o"); //2025-05-02T19:18:33.2947218Z Nur nötig wenn Client keinen TimeStamp sendet //TODO: Entscheiden ob Client oder Serverseitiges Handeln der TimeStamps!
+            List<ChatMessage> messages = LoadChatLog();
             messages.Add(message);
-            SaveChatLog();
+            SaveChatLog(messages);
             return NoContent();
         }
 
@@ -41,7 +41,7 @@ namespace ChatBackend.Controllers
             return JsonSerializer.Deserialize<List<ChatMessage>>(json) ?? new List<ChatMessage>();
         }
 
-        private static void SaveChatLog()
+        private static void SaveChatLog(List<ChatMessage> messages)
         {
             var json = JsonSerializer.Serialize(messages, new JsonSerializerOptions { WriteIndented = true });
             System.IO.File.WriteAllText(FilePath, json);
