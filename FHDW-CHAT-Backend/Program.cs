@@ -1,3 +1,5 @@
+using FHDW_CHAT_Backend.Controllers;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add CORS to allow the Frontend
@@ -11,19 +13,14 @@ builder.Services.AddCors(options =>
     });
 });
 
-// Add services to the container.
 builder.Services.AddControllers();
-
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// activate CORS (before UseAuthorization)
 app.UseCors("AllowReactFrontend");
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -31,9 +28,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
-app.MapControllers();
+// Enable WebSockets
+var webSocketOptions = new WebSocketOptions
+{
+    KeepAliveInterval = TimeSpan.FromMinutes(2)
+};
+app.UseWebSockets(webSocketOptions);
 
+// Handle WebSocket connections at "/chat"
+app.Map("/chat", WebSocketController.Handle);
+
+app.MapControllers();
 app.Run();
