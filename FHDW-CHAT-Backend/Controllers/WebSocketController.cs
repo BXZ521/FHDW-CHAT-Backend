@@ -55,7 +55,7 @@ namespace FHDW_CHAT_Backend.Controllers
                 var message = JsonSerializer.Deserialize<ChatMessage>(json);
                 if (message != null)
                 {
-                    message.TimeStamp = DateTime.UtcNow.ToString("o");
+                    message.TimeStamp = DateTime.Now.ToString("o"); // Für generalisierte Speicherung auf UTC0: message.TimeStamp = DateTime.UtcNow.ToString("o");
                     var messages = LoadChatLog();
                     messages.Add(message);
                     SaveChatLog(messages);

@@ -1,27 +1,22 @@
 [
   {
     "Author": "Tim",
-    "Message": "test1 tim",
+    "Message": "Hallo Benjamin",
     "TimeStamp": "2025-05-05T15:07:31.4378781Z"
   },
   {
-    "Author": "Tim",
-    "Message": "Moin Benji. Es klappt!",
-    "TimeStamp": "2025-05-05T15:45:08.9841532Z"
+    "Author": "Ben",
+    "Message": "Na",
+    "TimeStamp": "2025-05-05T15:07:32.4378781Z"
   },
   {
     "Author": "Tim",
-    "Message": "test13",
-    "TimeStamp": "2025-05-05T17:00:50.2074785Z"
+    "Message": "Wie geht\u0027s dir?",
+    "TimeStamp": "2025-05-29T16:52:28.5897716Z"
   },
   {
-    "Author": "Tim",
-    "Message": "Scheit gut zu funktionieren und mal gucken was du dazu sagst",
-    "TimeStamp": "2025-05-05T17:14:48.8949371Z"
-  },
-  {
-    "Author": null,
-    "Message": null,
-    "TimeStamp": "2025-05-14T11:28:00.9738610Z"
+    "Author": "Ben",
+    "Message": "42",
+    "TimeStamp": "2025-05-29T16:52:52.9309035Z"
   }
 ]
