@@ -5,6 +5,7 @@
         public string Author { get; set; }
         public string Message { get; set; }
         public string TimeStamp { get; set; }
+        public string Addressee { get; set; }
     }
     /*{
       "author": "Tim",
