@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\bxz52\\source\\repos\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj": {}
+    "C:\\Users\\bxz52\\source\\repos\\BXZ521\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\bxz52\\source\\repos\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj": {
+    "C:\\Users\\bxz52\\source\\repos\\BXZ521\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\bxz52\\source\\repos\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj",
+        "projectUniqueName": "C:\\Users\\bxz52\\source\\repos\\BXZ521\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj",
         "projectName": "FHDW-CHAT-Backend",
-        "projectPath": "C:\\Users\\bxz52\\source\\repos\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj",
+        "projectPath": "C:\\Users\\bxz52\\source\\repos\\BXZ521\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj",
         "packagesPath": "C:\\Users\\bxz52\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\bxz52\\source\\repos\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\obj\\",
+        "outputPath": "C:\\Users\\bxz52\\source\\repos\\BXZ521\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

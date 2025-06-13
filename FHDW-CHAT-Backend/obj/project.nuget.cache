@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FNs53sdMydI=",
+  "dgSpecHash": "krxZ4KKZU/Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\bxz52\\source\\repos\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj",
+  "projectFilePath": "C:\\Users\\bxz52\\source\\repos\\BXZ521\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend\\FHDW-CHAT-Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bxz52\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\bxz52\\.nuget\\packages\\microsoft.openapi\\1.6.14\\microsoft.openapi.1.6.14.nupkg.sha512",
