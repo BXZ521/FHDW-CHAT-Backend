@@ -1,32 +1,38 @@
 [
-  {
-    "Author": "Tim",
-    "Message": "Hallo Benjamin",
-    "TimeStamp": "2025-05-30T14:45:31.4378781Z",
-    "Addressee": "/@alle"
-  },
-  {
-    "Author": "Ben",
-    "Message": "Hallo Tim",
-    "TimeStamp": "2025-05-30T14:45:40.4378781Z",
-    "Addressee": "/@alle"
-  },
-  {
-    "Author": "Jonas",
-    "Message": "Hallo alle zusammen",
-    "TimeStamp": "2025-05-30T14:46:20.6626332\u002B02:00",
-    "Addressee": "/@alle"
-  },
-  {
-    "Author": "Ben",
-    "Message": "Hallo herr Soltenborn. Sind Sie auch da?",
-    "TimeStamp": "2025-06-15T15:07:50.4378781Z",
-    "Addressee": "/@alle"
-  },
-  {
-    "Author": "Jonas",
-    "Message": "Diese Nachricht kann Ben nicht sehen \uD83D\uDE09",
-    "TimeStamp": "2025-05-30T14:46:20.6626332\u002B02:00",
-    "Addressee": "/@Tim"
-  }
+    {
+        "Author": "Tim",
+        "Message": "Hallo Benjamin",
+        "TimeStamp": "2025-05-30T14:45:31.4378781Z",
+        "Addressee": "/@alle"
+    },
+    {
+        "Author": "Ben",
+        "Message": "Hallo Tim",
+        "TimeStamp": "2025-05-30T14:45:40.4378781Z",
+        "Addressee": "/@alle"
+    },
+    {
+        "Author": "Jonas",
+        "Message": "Hallo alle zusammen",
+        "TimeStamp": "2025-05-30T14:46:20.6626332\u002B02:00",
+        "Addressee": "/@alle"
+    },
+    {
+        "Author": "Ben",
+        "Message": "Hallo herr Soltenborn. Sind Sie auch da?",
+        "TimeStamp": "2025-06-15T15:07:50.4378781Z",
+        "Addressee": "/@alle"
+    },
+    {
+        "Author": "Jonas",
+        "Message": "Diese Nachricht kann Ben nicht sehen \uD83D\uDE09",
+        "TimeStamp": "2025-05-30T14:46:20.6626332\u002B02:00",
+        "Addressee": "/@Tim"
+    },
+    {
+        "Author": "System",
+        "Message": "Diese Nachricht wird nur einem ungeingeloggten Nutzer eingezeigt, vergessen Sie nicht, in der Frontend-Config einen Benutzernamen zu setzen.",
+        "TimeStamp": "2025-05-30T14:46:20.6626332\u002B02:00",
+        "Addressee": "/@"
+    }
 ]

@@ -1,5 +1,4 @@
 ﻿using FHDW_CHAT_Backend.Models;
-using Microsoft.AspNetCore.Http;
 using System.Net.WebSockets;
 using System.Text;
 using System.Text.Json;
@@ -8,10 +7,17 @@ namespace FHDW_CHAT_Backend.Controllers
 {
     public class WebSocketController
     {
+        //Liste der verbundenen Websocket-Clients
         private static readonly List<WebSocket> ConnectedClients = new();
+
+        //Pfad zur Chatlog-Datei
         private static readonly string FilePath = "chatlog.json";
+
+        //Lock-Objekt zur Synchronisierung des Zugriffs auf shared Resources
         private static readonly object LockObj = new();
 
+
+        /// Behandelt eingehende WebSocket-Verbindungen.
         public static async Task Handle(HttpContext context)
         {
             if (context.WebSockets.IsWebSocketRequest)
@@ -30,6 +36,7 @@ namespace FHDW_CHAT_Backend.Controllers
             }
         }
 
+        // Sendet den aktuellen Chatlog an einem sich neu verbindenten Client
         private static async Task SendChatLog(WebSocket socket)
         {
             var chatLog = LoadChatLog();
@@ -37,6 +44,8 @@ namespace FHDW_CHAT_Backend.Controllers
             await socket.SendAsync(Encoding.UTF8.GetBytes(json), WebSocketMessageType.Text, true, CancellationToken.None);
         }
 
+        
+        // Verarbeitung und Broadcasting eingehender Nachrichten
         private static async Task ReceiveLoop(WebSocket socket)
         {
             var buffer = new byte[1024 * 4];
@@ -55,17 +64,22 @@ namespace FHDW_CHAT_Backend.Controllers
                 var message = JsonSerializer.Deserialize<ChatMessage>(json);
                 if (message != null)
                 {
+                    //Zeitstempel setzen (lokal(Server) oder Alternativ, siehe Kommentar, UTC-Zeit)
                     message.TimeStamp = DateTime.Now.ToString("o"); // Für generalisierte Speicherung auf UTC0: message.TimeStamp = DateTime.UtcNow.ToString("o");
+
+                    //Chatverlauf laden, Nachricht anhängen und speichern
                     var messages = LoadChatLog();
                     messages.Add(message);
                     SaveChatLog(messages);
 
+                    //Broadcast an alle Clients
                     var outJson = JsonSerializer.Serialize(messages);
                     await Broadcast(outJson);
                 }
             }
         }
 
+        // Sendet eine Nachricht an alle verbundenen Clients
         private static async Task Broadcast(string message)
         {
             var buffer = Encoding.UTF8.GetBytes(message);
@@ -82,6 +96,7 @@ namespace FHDW_CHAT_Backend.Controllers
             await Task.WhenAll(tasks);
         }
 
+        // Konvertierung JSON-Log --> Liste
         private static List<ChatMessage> LoadChatLog()
         {
             if (!File.Exists(FilePath)) return new List<ChatMessage>();
@@ -89,6 +104,7 @@ namespace FHDW_CHAT_Backend.Controllers
             return JsonSerializer.Deserialize<List<ChatMessage>>(json) ?? new List<ChatMessage>();
         }
 
+        // Speicherung der Liste in der JSON-Log-File
         private static void SaveChatLog(List<ChatMessage> messages)
         {
             var json = JsonSerializer.Serialize(messages, new JsonSerializerOptions { WriteIndented = true });

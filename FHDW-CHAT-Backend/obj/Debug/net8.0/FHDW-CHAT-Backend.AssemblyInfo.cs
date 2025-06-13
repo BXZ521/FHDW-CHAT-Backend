@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FHDW-CHAT-Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55914c11b138cd58920b670b7640027026e0033e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fae499eafaaa9e016d6e67e3a9ca45f21357f949")]
 [assembly: System.Reflection.AssemblyProductAttribute("FHDW-CHAT-Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FHDW-CHAT-Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

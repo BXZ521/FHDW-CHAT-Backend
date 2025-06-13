@@ -2,11 +2,31 @@
   {
     "Author": "Tim",
     "Message": "Hallo Benjamin",
-    "TimeStamp": "2025-05-05T15:07:31.4378781Z"
+    "TimeStamp": "2025-05-30T14:45:31.4378781Z",
+    "Addressee": "/@alle"
   },
   {
     "Author": "Ben",
-    "Message": "Na",
-    "TimeStamp": "2025-05-05T15:07:32.4378781Z"
+    "Message": "Hallo Tim",
+    "TimeStamp": "2025-05-30T14:45:40.4378781Z",
+    "Addressee": "/@alle"
+  },
+  {
+    "Author": "Jonas",
+    "Message": "Hallo alle zusammen",
+    "TimeStamp": "2025-05-30T14:46:20.6626332\u002B02:00",
+    "Addressee": "/@alle"
+  },
+  {
+    "Author": "Ben",
+    "Message": "Hallo herr Soltenborn. Sind Sie auch da?",
+    "TimeStamp": "2025-06-15T15:07:50.4378781Z",
+    "Addressee": "/@alle"
+  },
+  {
+    "Author": "Jonas",
+    "Message": "Diese Nachricht kann Ben nicht sehen \uD83D\uDE09",
+    "TimeStamp": "2025-05-30T14:46:20.6626332\u002B02:00",
+    "Addressee": "/@Tim"
   }
 ]
